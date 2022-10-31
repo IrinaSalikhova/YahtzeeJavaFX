@@ -61,6 +61,9 @@ public void countScore(Dice gameDice) {
 		if (map.containsValue(3) || map.containsValue(4) || map.containsValue(5)) {
 			scoreboard[8].setElement(countAll(gameDice));
 		}
+		else {
+			scoreboard[8].setElement(0);
+		}
 	}
 	else {
 		lowerscore += scoreboard[8].boardElementValue();
@@ -71,6 +74,9 @@ public void countScore(Dice gameDice) {
 		if (map.containsValue(4) || map.containsValue(5)) {
 			scoreboard[9].setElement(countAll(gameDice));
 		}
+		else {
+			scoreboard[9].setElement(0);
+		}
 	}
 	else {
 		lowerscore += scoreboard[9].boardElementValue();
@@ -80,6 +86,9 @@ public void countScore(Dice gameDice) {
 	if 	(!scoreboard[10].isOnHold()) {
 		if (map.keySet().size() == 2 && map.containsValue(3)) {
 			scoreboard[10].setElement(25);
+		}
+		else {
+			scoreboard[10].setElement(0);
 		}
 	}
 	else {
@@ -93,6 +102,9 @@ public void countScore(Dice gameDice) {
 				(map.containsKey(4) && map.containsKey(5) && map.containsKey(6) && map.containsKey(3))) {
 			scoreboard[11].setElement(30);
 		}
+		else {
+			scoreboard[11].setElement(0);
+		}
 	}		
 	else {
 		lowerscore += scoreboard[11].boardElementValue();
@@ -104,6 +116,9 @@ public void countScore(Dice gameDice) {
 				(map.containsKey(4) && map.containsKey(5) && map.containsKey(2) && map.containsKey(3) && map.containsKey(1))) {
 			scoreboard[12].setElement(40);
 		}
+		else {
+			scoreboard[12].setElement(0);
+		}
 	}
 	else {
 		lowerscore += scoreboard[12].boardElementValue();
@@ -113,6 +128,9 @@ public void countScore(Dice gameDice) {
 	if 	(!scoreboard[13].isOnHold()) {
 		if (map.keySet().size() == 1 && !map.containsKey(0)) {
 			scoreboard[13].setElement(50);
+		}
+		else {
+			scoreboard[13].setElement(0);
 		}
 	}
 	else {
